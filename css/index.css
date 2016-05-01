@@ -1,7 +1,274 @@
+/*---------------------------*/
+/*typography*/
+/*---------------------------*/
+
+@font-face {
+    font-family: myFont;
+    src: url("../font/100.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family:myFont;
+    src: url("../font/normal.ttf") ;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url("../font/bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url("../font/Lato-Black.ttf");
+    font-weight: 900;
+}
+
+.small-title {
+    font-size: 16px;
+}
+.dark-color {
+    color:#002b41;
+}
+
+.white-color {
+    color: #ffffff;
+}
+.less-color {
+    color: #b7b6bb;
+}
+.light-text {
+    font-weight: lighter;
+}
+
+.main-flat-color {
+    background-color: #2d313a;
+}
+.reverse-color {
+    color: #04bebd;
+}
+.line-height {
+    line-height: 1.41;
+}
+.normal-title {
+    font-size: 20px;
+}
+/*---------------------------*/
+
+body {
+    font-family: myFont, sans-serif;
+    overflow: auto;
+}
+.body-class {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 .no-margin {
     margin: 0;
 }
 
 .no-padding {
     padding: 0;
+}
+
+.bg-layer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.bg-overplay {
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.15);
+    z-index: -1;
+}
+
+.both-centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+}
+
+.vertical-centered {
+    top: 50%;
+    transform: translate(0%,-50%);
+    -webkit-transform:translate(0%,-50%);
+    position: absolute;
+
+}
+.horizontal-centered {
+    left: 50%;
+    transform: translate(-50%,0%);
+    -webkit-transform:translate(-50%,0%);
+    position: absolute;
+
+}
+
+.logo-square {
+    background-color: #002b41;
+    color: #eaeef0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    width: 110px;
+    padding: 15px 0;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.welcome-to{
+
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40%;
+}
+
+.long-animation {
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.short-animation {
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+}
+
+
+.my-header {
+    position: absolute;
+    width: 100%;
+    top:0;
+    background: #2d313a;
+    color: #ffffff;
+    z-index: 9999;
+}
+.my-header >div {
+    position: relative;
+}
+.my-header .fa {
+    padding: 20px 15px;
+    font-size: 22px;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.slideout-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
+
+.slideout-panel {
+    position:relative;
+    z-index: 1;
+    will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+
+.leftmenu-click-overplay {
+    position: absolute;
+    z-index: 9999;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+.hide-element {
+    display: none;!important;
+}
+
+.hot-item {
+    background-color: #ffffff;
+    margin: 5px;
+}
+.hot-item:not(:first-of-type) {
+    /*border-top: 1px solid #000000;*/
+}
+.hot-item i.fa {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.hot-item h5{
+    font-weight: bold;
+    padding: 15px 5px;
+}
+
+.hot-item h6.pull-right {
+    padding: 19px 10px 15px 0px;
+
+}
+
+/*-------------------------*/
+/*Location detail page*/
+/*-------------------------*/
+
+.item-action-panel {
+    background-color: #04bebd;
+}
+
+.item-action-panel > div {
+    width: 24%;
+    display: inline-block;
+    padding: 8px 0px;
+    text-transform: uppercase;
+
+}
+.item-action-panel > div span {
+    font-size: 11px;
+}
+.item-action-panel > div i {
+    font-size: 23px;
+}
+
+.lc-item-content {
+    background-color: #ffffff;
+    padding: 15px 15px;
+}
+
+.background-overplay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }

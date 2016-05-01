@@ -1,1 +1,25 @@
-<h5>kaka</h5>
+<!--<div class="bg-layer" style=""></div>-->
+
+<div class="row no-padding no-margin">
+    <div id="intro-text" class="animated bounceIn">
+        <div class="welcome-to dark-color ">DU LỊCH ĐÀ LẠT</div>
+        <div class="light-text dark-color" style="font-size: 12px;text-align: center;">DESIGN FOR YOUR NEED</div>
+    </div>
+
+    <div class="main-content animated fadeInUp" ng-if="introDone">
+        <div class="hot-item" ng-repeat="item in locations" ng-click="toDetail(item)">
+                <div>
+                    <i class="pull-left fa fa-2x fa-map-marker reverse-color" ></i>
+                    <h5 class="pull-left">{{item.name}}</h5>
+                    <h6 class="pull-right less-color">Cách 12km</h6>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img class="embed-responsive-item body-class" ng-src="{{item.cover}}">
+                </div>
+                <div>
+                    <p class="no-margin dark-color light-text" style="padding: 15px">{{item.description}}</p>
+                </div>
+            </div>
+    </div>
+</div>
