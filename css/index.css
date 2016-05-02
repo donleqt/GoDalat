@@ -60,6 +60,7 @@
 body {
     font-family: myFont, sans-serif;
     overflow: auto;
+
 }
 .body-class {
     background-repeat: no-repeat;
@@ -157,6 +158,10 @@ body {
     background: #2d313a;
     color: #ffffff;
     z-index: 9999;
+    transition: transform 0.2s;
+    -webkit-transition: -webkit-transform 0.2s;
+        -moz-transition: -moz-transform 0.2s;
+
 }
 .my-header >div {
     position: relative;
@@ -218,14 +223,14 @@ body {
 
 .hot-item {
     background-color: #ffffff;
-    margin: 5px;
+    margin: 0;
 }
 .hot-item:not(:first-of-type) {
     /*border-top: 1px solid #000000;*/
 }
 .hot-item i.fa {
     padding-top: 20px;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .hot-item h5{
     font-weight: bold;
@@ -271,4 +276,12 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+.hide-header {
+    -webkit-transform:translateY(-100%);
+    -moz-transform :translateY(-100%);
+    -ms-transform    : translateY(-100%);
+    -o-transform      : translateY(-100%);
+    transform: translateY(-100%);
 }

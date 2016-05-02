@@ -5,30 +5,11 @@
 
     var myApp =  angular.module("myApp");
 
-    myApp.controller("MainController", ['$scope','$timeout','$state','$stateParams', function ($scope,$timeout,$state,$stateParams) {
+    myApp.controller("MainController", ['$scope','$timeout','$state','$stateParams','$rootScope', function ($scope,$timeout,$state,$stateParams,$rootScope) {
 
-        $scope.$root.introDone = false;
-        $scope.$root.appDriven = {
-            catName:"Nổi bật",
-            backButton: false,
-            previous: 'index',
-            goBack : function () {
-                $state.go(this.previous);
-            }
-            
-        }
-        $scope.$root.windowSize = {
-            w: window.innerWidth,
-            h: window.innerHeight
-        };
-        $timeout(function () {
-            $("#intro-text").addClass('bounceOut');
-            $timeout(function () {
-                $("#intro-text").remove();
-                $scope.$root.introDone =true;
-
-            },500);
-        },2000);
+        $scope.$parent.appDriven.backButton=false;
+        $scope.$parent.appDriven.catName='Nổi bật';
+        $scope.$parent.appDriven.previous='index';
 
         $scope.locations = [
             {

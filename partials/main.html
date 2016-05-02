@@ -1,12 +1,12 @@
 <!--<div class="bg-layer" style=""></div>-->
 
-<div class="row no-padding no-margin">
-    <div id="intro-text" class="animated bounceIn">
+<div class="row no-padding no-margin ">
+    <div id="intro-text" class="animated bounceIn" ng-if="!$parent.introDone">
         <div class="welcome-to dark-color ">DU LỊCH ĐÀ LẠT</div>
         <div class="light-text dark-color" style="font-size: 12px;text-align: center;">DESIGN FOR YOUR NEED</div>
     </div>
 
-    <div class="main-content animated fadeInUp" ng-if="introDone">
+    <div class="main-content animated slideInRight short-animation  " ng-if="introDone">
         <div class="hot-item" ng-repeat="item in locations" ng-click="toDetail(item)">
                 <div>
                     <i class="pull-left fa fa-2x fa-map-marker reverse-color" ></i>

@@ -8,8 +8,8 @@
     myApp.controller("LocationDetailController", ['$scope','$stateParams','$state', function ($scope,$stateParams,$state) {
 
         $scope.item = $stateParams.locationItem;
-        $scope.$root.appDriven.catName = $scope.item.name;
-        $scope.$root.appDriven.backButton = true;
+        $scope.$parent.appDriven.catName = $scope.item.name;
+        $scope.$parent.appDriven.backButton = true;
        
           
         

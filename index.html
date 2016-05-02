@@ -16,7 +16,7 @@
 
 
 </head>
-<body class="body-class" >
+<body class="body-class" ng-controller="IndexController">
     <nav id="menu" style="background-color: #f1f1f3">
 
     </nav>
@@ -24,7 +24,7 @@
     <main class="body-class" id="panel" style="background-image: url(img/main_bg.png)">
         <div class="leftmenu-click-overplay" ng-click="slideout.close()" ng-swipe-left="slideout.close()" ng-if="slideout.isOpen()" style=""></div>
 
-        <div class="my-header dark-color animated fadeInDown" ng-if="introDone">
+        <div id="header" class="my-header headroom dark-color " sm-header="#mainContent" ng-if="introDone">
             <div>
                 <i class="fa fa-2x fa-navicon pull-left" ng-if="!appDriven.backButton" onclick="slideout.toggle()"></i>
                 <i class="fa fa-2x fa-angle-left pull-left" ng-if="appDriven.backButton" ng-click="appDriven.goBack()"></i>
@@ -35,8 +35,8 @@
                 <div class="clearfix"></div>
             </div>
         </div>
-        <div class="container-fluid no-margin no-padding" ui-view  style="height: {{windowSize.h}}px;height: 100vh;overflow: auto;padding-top: 62px">
-
+        <div id="mainContent" class="container-fluid no-margin no-padding"   style="height: {{windowSize.h}}px;height: 100vh;overflow: auto;padding-top: 62px;overflow-x: hidden;">
+                <div ui-view></div>
         </div>
     </main>
 
@@ -48,10 +48,12 @@
 <script src="bower_components/slideout/slideout.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="bower_components/fastclick/fastclick.js"></script>
+<script src="bower_components/scrolldirective.js"></script>
 
 <script src="js/app.js"></script>
 <script src="js/controller/MainController.js"></script>
 <script src="js/controller/LocationDetailController.js"></script>
+<script src="js/controller/IndexContoller.js"></script>
 <script type="application/javascript">
     var slideout = new Slideout({
         'panel': document.getElementById('panel'),
@@ -60,6 +62,7 @@
         'tolerance': 70,
         'touch':false
     });
+
 </script>
 
 

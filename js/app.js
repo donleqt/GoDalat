@@ -3,11 +3,11 @@
  */
 (function(angular) {
 
-    var myApp = angular.module('myApp', ["ui.router","ng-fastclick"]);
+    var myApp = angular.module('myApp', ["ui.router","ng-fastclick","sm.header"]);
 
     myApp.config( function ($stateProvider, $urlRouterProvider){
 
-        // $urlRouterProvider.otherwise("/");
+        $urlRouterProvider.otherwise("/");
         //Not set up the state
         $stateProvider
 
