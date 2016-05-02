@@ -3,7 +3,7 @@
  */
 (function(angular) {
 
-    var myApp = angular.module('myApp', ["ui.router","ng-fastclick","sm.header"]);
+    var myApp = angular.module('myApp', ["ui.router","ng-fastclick","sm.header","photo.swipe","uiGmapgoogle-maps"]);
 
     myApp.config( function ($stateProvider, $urlRouterProvider){
 

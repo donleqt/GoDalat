@@ -5,7 +5,15 @@
 
     var myApp = angular.module('myApp');
     myApp.controller('IndexController',['$scope','$state','$stateParams','$timeout', function ($scope,$state,$stateParams,$timeout) {
+        $scope.slideMenu = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'padding': 256,
+            'tolerance': 70,
+            'touch':false
+        });
 
+       
         $scope.introDone = false;
         $scope.appDriven = {
             catName: "",

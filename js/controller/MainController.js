@@ -16,6 +16,20 @@
                 name: 'Thung lũng tình yêu',
                 type: '1',
                 id: '1',
+                info: [
+                    {
+                        name: 'Địa chỉ',
+                        content: '05 - 07 Mai Anh Đào. P8. TP. Đà Lạt'
+                    },
+                    {
+                        name: 'Điện thoại',
+                        content: '0633.821.448'
+                    },
+                    {
+                        name: 'Vé vào cổng',
+                        content: '40.000đ/ khách người lớn, 20.000đ/ khách trẻ nhỏ (tham khảo).'
+                    }
+                ],
                 cover: 'img/location/thunglungty.jpg',
                 description: 'Nằm cách trung tâm thành phố Đà Lạt khoảng 5km thung lũng tình yêu là một khu du lịch đầy thơ mộng luôn cuốn hút mọi du khách gần xa tới tham quan.',
                 content: 'Nằm cách trung tâm thành phố Đà Lạt khoảng 5km thung lũng tình yêu là một khu du lịch đầy thơ mộng luôn cuốn hút mọi du khách gần xa tới tham quan.'

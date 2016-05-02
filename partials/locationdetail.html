@@ -2,7 +2,7 @@
 <div class="row no-padding no-margin animated slideInRight short-animation">
     <div class="embed-responsive embed-responsive-16by9">
             <div class="embed-responsive-item">
-                <img class="img-responsive" style="height: 100%;width: 100%" ng-src="{{item.cover}}">
+                <img photo-click="{{item.cover}}" class="img-responsive" style="height: 100%;width: 100%" ng-src="{{item.cover}}">
             </div>
     </div>
     <div class="item-action-panel text-center white-color">
@@ -20,19 +20,26 @@
         </div>
         <div>
             <div><i class="fa fa-eye"></i></div>
-            <span class="no-margin">Tương tự</span>
+            <span class="no-margin">Xem hình</span>
         </div>
     </div>
 
     <div class="lc-item-content">
         <div class="overview">
-            <h4 class="normal-title" style="font-weight: bold">Tổng quan</h4>
+            <h4 class="" style="font-weight: bold">Tổng quan</h4>
             <h4 class="line-height small-title">{{item.content}}</h4>
         </div>
+        <div class="overview" style="margin-top: 20px" ng-if="item.info.length>0">
+            <div class="info-item" ng-repeat="info in item.info">
+                <div class=" small-title" style="font-weight: bold">{{info.name}}</div>
+                <div class=" small-title">{{info.content}}</div>
+            </div>
 
-        <div class="overview" style="margin-top: 20px">
-            <h4 class="normal-title" style="font-weight: bold">Facts</h4>
-            <h4 class="line-height small-title"></h4>
         </div>
+
     </div>
+
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+
+
 </div>

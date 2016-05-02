@@ -10,8 +10,9 @@
         $scope.item = $stateParams.locationItem;
         $scope.$parent.appDriven.catName = $scope.item.name;
         $scope.$parent.appDriven.backButton = true;
-       
-          
+        $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+
+
         
     }]);
 

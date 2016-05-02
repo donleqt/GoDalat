@@ -14,7 +14,7 @@
                   var navbarHeight = el.outerHeight();
                   var scrollEl = $(attrs['smHeader']);
                   scrollEl.scroll(function (event) {
-                      console.log('you scrolled');
+                      
                       var st = scrollEl.scrollTop();
 
                       // Make sure they scroll more than delta

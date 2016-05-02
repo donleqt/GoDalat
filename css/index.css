@@ -136,7 +136,7 @@ body {
 
     font-weight: bold;
     text-align: center;
-    font-size: 25px;
+    font-size: 28px;
     margin-top: 40%;
 }
 
@@ -285,3 +285,12 @@ body {
     -o-transform      : translateY(-100%);
     transform: translateY(-100%);
 }
+
+.overview {
+}
+
+.overview .info-item:not(:first-of-type) {
+    padding: 10px 0;
+}
+
+.angular-google-map-container { height: 300px; }
