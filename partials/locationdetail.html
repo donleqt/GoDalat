@@ -36,10 +36,19 @@
             </div>
 
         </div>
-
+        <div style="margin-top: 20px">
+            <map ng-transclude class="short-map"  center="map.center" options="map.options">
+                <marker position="marker.position" decimals="marker.decimals" options="marker.options"></marker>
+            </map>
+        </div>
     </div>
 
-    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+
+
+</div>
+
+
+
 
 
 </div>

@@ -16,6 +16,10 @@
                 name: 'Thung lũng tình yêu',
                 type: '1',
                 id: '1',
+                geo: {
+                    lat: 11.980296,
+                    long: 108.450302
+                },
                 info: [
                     {
                         name: 'Địa chỉ',
@@ -39,6 +43,10 @@
                 name: 'Cao đẳng sư phạm Đà Lạt',
                 type: '1',
                 id: '2',
+                geo: {
+                    lat: 11.946719,
+                    long: 108.453123
+                },
                 cover: 'img/location/caodangsp.jpg',
                 description: 'Cao đẳng Sư phạm Đà Lạt, thuộc phường 10, thành phố Đà Lạt, tỉnh Lâm Đồng. Ngôi trường được người Pháp thành lập năm 1927, do kiến trúc sư Moncet thiết kế và chỉ đạo xây dựng',
                 content: 'Trường được người Pháp xây dựng năm 1927, toàn bộ ngôi trường này là một công trình kiến trúc độc đáo mang đậm dấu ấn cổ kính châu Âu nhưng cũng đồng thời kết hợp với nhiều chi tiết kiến trúc bản địa tạo nên sự hài hòa độc đáo'
@@ -48,6 +56,10 @@
                 name: 'Chùa Linh Phước',
                 type: '1',
                 id: '3',
+                geo: {
+                    lat: 11.944439,
+                    long: 108.499796
+                },
                 cover: 'img/location/chuavechai.jpg',
                 description: 'Chùa Linh Phước, còn được gọi là Chùa Ve Chai vì trong sân chùa có con rồng dài 49 m được làm bằng 12.000 vỏ chai bia. Chùa Linh Phước là một công trình kiến trúc khảm sành đặc sắc của thành phố Đà Lạt.',
                 content: 'Chùa được xây dựng vào năm 1949, hoàn thành vào năm 1952. Chùa đã qua 4 đời trụ trì là: Hòa thượng Thích Minh Thể (1951 – 1954), Hòa thượng Thích An Hòa (1954 – 1956), Hòa thượng Thích Quảng Phát (1956 – 1959) và Hòa thượng Thích Minh Đức (1959 – 1985). Thượng tọa Thích Tâm Vị trụ trì từ năm 1985 đến nay.'

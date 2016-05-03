@@ -10,8 +10,27 @@
         $scope.item = $stateParams.locationItem;
         $scope.$parent.appDriven.catName = $scope.item.name;
         $scope.$parent.appDriven.backButton = true;
-        $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
 
+        var geo = $scope.item.geo;
+        $scope.map = {
+            center: [geo.lat, geo.long],
+
+            options: function() {
+                return {
+                    streetViewControl: false,
+                    scrollwheel: false,
+                    zoom: 16
+                }
+            }
+        };
+
+        $scope.marker = {
+            position: [geo.lat, geo.long],
+            decimals: 6,
+            options: function() {
+                return { draggable: false };
+            }
+        }
 
         
     }]);

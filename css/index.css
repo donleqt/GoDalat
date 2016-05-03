@@ -294,3 +294,7 @@ body {
 }
 
 .angular-google-map-container { height: 300px; }
+
+.short-map {
+    height:350px;
+}
