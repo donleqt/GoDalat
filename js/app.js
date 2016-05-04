@@ -3,7 +3,7 @@
  */
 (function(angular) {
 
-    var myApp = angular.module('myApp', ["ui.router","ng-fastclick","sm.header","photo.swipe","ngMaps","ngAnimate","anim-in-out"]);
+    var myApp = angular.module('myApp', ["ui.router","ng-fastclick","sm.header","photo.swipe","ngMaps"]);
 
     myApp.config( function ($stateProvider, $urlRouterProvider){
 
@@ -23,7 +23,14 @@
                 params: {
                     locationItem: null
                 }
+            })
+            .state('location', {
+                url:'/location',
+                templateUrl: 'partials/location.html',
+                controller: 'LocationDetailController'
+
             });
+        ;
         // uiGmapGoogleMapApiProvider.configure({
         //     key: 'AIzaSyCveeJO26XfktN14zw1-HtqLxyu73b0nSE',
         //     v: '3.20', //defaults to latest 3.X anyhow

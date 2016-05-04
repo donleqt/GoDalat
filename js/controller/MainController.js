@@ -47,6 +47,7 @@
                     lat: 11.946719,
                     long: 108.453123
                 },
+                imageList: [],
                 cover: 'img/location/caodangsp.jpg',
                 description: 'Cao đẳng Sư phạm Đà Lạt, thuộc phường 10, thành phố Đà Lạt, tỉnh Lâm Đồng. Ngôi trường được người Pháp thành lập năm 1927, do kiến trúc sư Moncet thiết kế và chỉ đạo xây dựng',
                 content: 'Trường được người Pháp xây dựng năm 1927, toàn bộ ngôi trường này là một công trình kiến trúc độc đáo mang đậm dấu ấn cổ kính châu Âu nhưng cũng đồng thời kết hợp với nhiều chi tiết kiến trúc bản địa tạo nên sự hài hòa độc đáo'
@@ -58,7 +59,7 @@
                 id: '3',
                 geo: {
                     lat: 11.944439,
-                    long: 108.499796
+                    long: 108.499795
                 },
                 cover: 'img/location/chuavechai.jpg',
                 description: 'Chùa Linh Phước, còn được gọi là Chùa Ve Chai vì trong sân chùa có con rồng dài 49 m được làm bằng 12.000 vỏ chai bia. Chùa Linh Phước là một công trình kiến trúc khảm sành đặc sắc của thành phố Đà Lạt.',
@@ -76,3 +77,5 @@
 
 })(window.angular);
 
+// tour
+// ten, gia*, cong ty, thoi gian*, hanh trinh, ngay khoi hanh*

@@ -184,7 +184,7 @@ body {
     bottom: 0;
     right: 0;
     z-index: 0;
-    width: 256px;
+    width: 280px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     display: none;
@@ -265,8 +265,8 @@ body {
 }
 
 .lc-item-content {
-    background-color: #ffffff;
-    padding: 15px 15px;
+    /*background-color: #ffffff;*/
+    /*padding: 15px 15px;*/
 }
 
 .background-overplay {
@@ -287,14 +287,46 @@ body {
 }
 
 .overview {
+    background: #fff;
+    padding: 10px;
+    margin: 5px;
 }
 
 .overview .info-item:not(:first-of-type) {
-    padding: 10px 0;
+   padding-top: 10px;
+    border-right: 2px solid #DEDEDE;
+    border-bottom: 2px solid #DEDEDE;
 }
 
 .angular-google-map-container { height: 300px; }
 
 .short-map {
     height:350px;
+}
+
+.menu-container {
+
+}
+.menu-container .menu-item {
+    transition: background,transform 0.2s;
+    border-left: 5px solid #04bebd;
+    transform: translateX(-5px);
+    -webkit-transform:translateX(-5px);
+}
+.menu-container .menu-item:active{
+    background-color: #dadada;
+    transform: translateX(0px);
+    -webkit-transform:translateX(0px);
+}
+.menu-container .menu-item h4 {
+    padding: 15px 10px;
+    margin: 5px 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.category-item {
+    margin-top: 20px;
 }

@@ -1,4 +1,4 @@
-<div class="background-overplay" style="background-color: #ffffff"></div>
+<div class="background-overplay" style="background-color: #f3f3f3"></div>
 <div class="row no-padding no-margin animated slideInRight short-animation">
     <div class="embed-responsive embed-responsive-16by9">
             <div class="embed-responsive-item">
@@ -26,20 +26,26 @@
 
     <div class="lc-item-content">
         <div class="overview">
-            <h4 class="" style="font-weight: bold">Tổng quan</h4>
-            <h4 class="line-height small-title">{{item.content}}</h4>
+            <h4 class="no-margin-top" style="font-weight: bold">Tổng quan</h4>
+            <h4 class="line-height small-title" >{{item.content}}</h4>
         </div>
-        <div class="overview" style="margin-top: 20px" ng-if="item.info.length>0">
+        <div class="overview" ng-if="item.info.length>0">
             <div class="info-item" ng-repeat="info in item.info">
                 <div class=" small-title" style="font-weight: bold">{{info.name}}</div>
                 <div class=" small-title">{{info.content}}</div>
             </div>
 
         </div>
-        <div style="margin-top: 20px">
+        <div class="overview">
             <map ng-transclude class="short-map"  center="map.center" options="map.options">
                 <marker position="marker.position" decimals="marker.decimals" options="marker.options"></marker>
             </map>
+        </div>
+
+        <div class="overview" ng-show="false">
+            <h4 class="no-margin-top" style="font-weight: bold">Bài viết</h4>
+            <div>
+            </div>
         </div>
     </div>
 

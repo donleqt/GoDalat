@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="bower_components/animate/animate.css" >
     <link rel="stylesheet" href="bower_components/photoswipe/dist/photoswipe.css">
     <link rel="stylesheet" href="bower_components/photoswipe/dist/default-skin/default-skin.css">
-    <link rel="stylesheet" href="bower_components/angular-ui-router-anim-in-out/css/anim-in-out.css">
+    <!--<link rel="stylesheet" href="bower_components/angular-ui-router-anim-in-out/css/anim-in-out.css">-->
 
     <link rel="stylesheet" href="css/index.css" >
 
@@ -22,7 +22,27 @@
 </head>
 <body class="body-class" ng-controller="IndexController">
     <nav id="menu" style="background-color: #f1f1f3">
-
+        <div class="container-fluid ">
+            <div class="row">
+                <div style="height: 180px">
+                    <img style="height: 100%;width: 100%" ng-src="img/main_bg.png">
+                </div>
+            </div>
+            <div class="row menu-container dark-color">
+                <div class="col-xs-12 menu-item">
+                        <h4>Nổi bật</h4>
+                </div>
+                <div class="col-xs-12 menu-item">
+                    <h4>Địa điểm</h4>
+                </div>
+                <div class="col-xs-12 menu-item">
+                    <h4>Tour</h4>
+                </div>
+                <div class="col-xs-12 menu-item">
+                    <h4>Tin tức</h4>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <main class="body-class" id="panel" style="background-image: url(img/main_bg.png)">
@@ -51,7 +71,7 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/map/lodash.core.min.js"></script>
 <script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
+<!--<script src="bower_components/angular-animate/angular-animate.js"></script>-->
 <script src="bower_components/slideout/slideout.js"></script>
 <script src="bower_components/ng-maps.min.js"></script>
 <script src="bower_components/map/angular-loger.js"></script>
@@ -59,7 +79,7 @@
 <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="bower_components/fastclick/fastclick.js"></script>
 <script src="bower_components/scrolldirective.js"></script>
-<script src="bower_components/angular-ui-router-anim-in-out/anim-in-out.js"></script>
+<!--<script src="bower_components/angular-ui-router-anim-in-out/anim-in-out.js"></script>-->
 <script type="application/javascript" src="bower_components/photoswipe/dist/photoswipe-ui-default.js"></script>
 <script type="application/javascript" src="bower_components/photoswipe/dist/photoswipe.js"></script>
 <script type="application/javascript" src="js/directive/photoSwipeDirective.js"></script>
@@ -68,6 +88,7 @@
 <script src="js/controller/MainController.js"></script>
 <script src="js/controller/LocationDetailController.js"></script>
 <script src="js/controller/IndexContoller.js"></script>
+<script src="js/controller/LocationController.js"></script>
 <script type="application/javascript">
 
 
