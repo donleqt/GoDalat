@@ -29,10 +29,10 @@
                 </div>
             </div>
             <div class="row menu-container dark-color">
-                <div class="col-xs-12 menu-item">
+                <div class="col-xs-12 menu-item" ng-click="state.go('index')">
                         <h4>Nổi bật</h4>
                 </div>
-                <div class="col-xs-12 menu-item">
+                <div class="col-xs-12 menu-item" ng-click="toLocation()">
                     <h4>Địa điểm</h4>
                 </div>
                 <div class="col-xs-12 menu-item">
@@ -60,7 +60,7 @@
             </div>
         </div>
         <div id="mainContent" class="container-fluid no-margin no-padding"   style="height: {{windowSize.h}}px;height: 100vh;overflow: auto;padding-top: 62px;overflow-x: hidden;-webkit-overflow-scrolling: touch">
-                <div ui-view  ></div>
+            <div ui-view  ></div>
         </div>
     </main>
     <div photo-swipe-container="partials/template/photoswipe.html" caption="currentItem "></div>

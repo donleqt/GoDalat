@@ -27,7 +27,7 @@
             .state('location', {
                 url:'/location',
                 templateUrl: 'partials/location.html',
-                controller: 'LocationDetailController'
+                controller: 'LocationController'
 
             });
         ;

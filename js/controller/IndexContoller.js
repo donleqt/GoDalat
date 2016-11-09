@@ -42,6 +42,16 @@
 
                 $('header').removeClass('hide-header');
                 $('#mainContent').scrollTop(0);
-            });
+                if ( $scope.slideMenu.isOpen())
+                {
+                    $scope.slideMenu.close();
+                }
+            }
+        );
+        $scope.state = $state;
+        $scope.toLocation = function () {
+            $state.go("location");
+            $scope.slideMenu.close();
+        }
     }]);
 })(window.angular);

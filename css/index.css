@@ -290,12 +290,13 @@ body {
     background: #fff;
     padding: 10px;
     margin: 5px;
+    border-right: 2px solid #DEDEDE;
+    border-bottom: 2px solid #DEDEDE;
 }
 
 .overview .info-item:not(:first-of-type) {
    padding-top: 10px;
-    border-right: 2px solid #DEDEDE;
-    border-bottom: 2px solid #DEDEDE;
+
 }
 
 .angular-google-map-container { height: 300px; }
@@ -329,4 +330,14 @@ body {
 
 .category-item {
     margin-top: 20px;
+}
+
+.category-item img {
+    padding: 0px;
+}
+
+.category-item .rounded-icon + * {
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: bold;
 }

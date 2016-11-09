@@ -40,14 +40,14 @@
                     return;
 
                 el.bind('click',function () {
-                    scope.$root[attrs.captionContainer]=scope.caption;
+                    // scope.$root[attrs.captionContainer]=scope.caption;
                     var pswpElement = document.querySelectorAll('.pswp')[0];
                     var items = [
                         {
                             src: src,
                             w: 0,
                             h: 0,
-                            title: 'mimage'
+                            title: ''
                         }
                     ];
                     var options = {
